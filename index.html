@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Step EPS – Suivi enseignant</title>
+<meta name="theme-color" content="#5b21b6"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/icon-192.png"><link rel="stylesheet" href="css/style.css"></head>
+<body style="padding-bottom:20px"><header><img src="icons/logo.png" alt="Logo Step EPS"><div><h1>STEP EPS</h1><p>Suivi enseignant</p></div></header>
+<main><section class="card"><h2>Importer</h2><div class="drop" id="dz" tabindex="0"><b>Dépose ici les .csv des élèves</b> et la liste de classe<br><small>Le type de fichier est reconnu automatiquement (Pronote, Mes Apps EPS ou carnet élève)</small></div>
+<input type="file" id="f" accept=".csv,text/csv" multiple hidden><button class="alt" id="sc">Récupérer la liste depuis Mes Apps EPS</button> <small id="ls"></small></section>
+<section class="card"><label>Classe<select id="cl"></select></label><div class="s" id="st" style="margin-top:12px"></div></section>
+<section class="card"><h2>Élèves</h2><div class="tw"><table><thead><tr><th>Élève</th><th>Classe</th><th>Séances</th><th>Dernière</th><th>Validées</th><th>Fichier</th></tr></thead><tbody id="tb"></tbody></table></div>
+<button id="ex">Exporter le compilé .csv</button> <button class="alt" id="ps">Envoyer le résumé vers Mes Apps EPS</button> <button class="alt" id="rz">Effacer les séances</button></section>
+<section class="card" id="dt" aria-live="polite" hidden></section>
+<p style="text-align:center"><small>Données stockées uniquement sur cet appareil · <a href="../Mes_Apps_EPS/">Mes Apps EPS</a></small></p></main>
+<script src="js/common.js"></script><script src="js/prof.js"></script></body></html>
