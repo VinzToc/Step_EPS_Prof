@@ -1,0 +1,12 @@
+[
+ {
+  "v": "1.1.0",
+  "date": "2026-11-26",
+  "titre": "Mise à jour du 26 novembre 2026",
+  "items": [
+   "Nouveau logo « Suivi Prof » détouré pour l'icône d'installation.",
+   "Mode hors ligne corrigé (fichiers d'icônes manquants).",
+   "Bandeau de bas de page (confidentialité, contact) ajouté."
+  ]
+ }
+]
