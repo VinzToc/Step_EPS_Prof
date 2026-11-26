@@ -1,4 +1,5 @@
-const V='step-prof-v2',F=['footer.js','nouveautes.js','nouveautes.json','./', 'index.html', 'eps-core.js', 'css/style.css', 'js/common.js', 'js/prof.js', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/Icon-stepeps-prof.png'];
+importScripts('version.js');
+const V='step-prof-v'+APP_VERSION,F=['version.js','footer.js','nouveautes.js','nouveautes.json','./', 'index.html', 'eps-core.js', 'css/style.css', 'js/common.js', 'js/prof.js', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/Icon-stepeps-prof.png'];
 const T=2500; // si le réseau ne répond pas en 2,5 s (wifi sans Internet, borne coupée…), on sert tout de suite la copie hors ligne
 const net=r=>new Promise((ok,ko)=>{const t=setTimeout(()=>ko(new Error('timeout')),T);fetch(r,{cache:'no-cache'}).then(x=>{clearTimeout(t);ok(x)},e=>{clearTimeout(t);ko(e)})});
 // Installation : chaque fichier est chargé séparément ; un fichier manquant ne bloque plus l'installation (donc le mode hors ligne).
